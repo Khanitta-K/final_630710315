@@ -4,10 +4,12 @@ import 'package:flutter/material.dart';
 import '../../models/response_body.dart';
 
 class PollResultsPage extends StatelessWidget {
+
   const PollResultsPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+
     return MyScaffold(
       appBar: AppBar(title: const Text('ผลโหวต')),
       body: Padding(
