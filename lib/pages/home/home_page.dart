@@ -37,13 +37,13 @@ class _HomePageState extends State<HomePage> {
 
     try {
       var result = await ApiClient().getPolls();
-      List<ResponseBody> pollResult = [];
+      /*List<ResponseBody> pollResult = [];
       for(int i = 1 ; i<=3 ; i++){
         pollResult.addAll(await ApiClient().getPollsResult(i));
-      }
+      }*/
       setState(() {
         _polls = result;
-        _pollResult!.addAll(pollResult);
+        //_pollResult!.addAll(pollResult);
       });
     } finally {
       setState(() {
